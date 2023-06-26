@@ -21,7 +21,7 @@
 
   &::after {
     display: none;
-    content: '';
+    content: "";
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
@@ -41,6 +41,7 @@
 
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   column-gap: 50px;

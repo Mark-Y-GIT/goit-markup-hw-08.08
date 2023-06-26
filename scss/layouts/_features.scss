@@ -1,13 +1,14 @@
 .features__list {
-  display: flex;
-  column-gap: var(--gap);
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
 }
 
 .features__item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
-
   &::before {
-    content: '';
+    content: "";
     display: block;
     height: 120px;
 
@@ -18,9 +19,23 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1199px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }
 
-$features-icons: 'antenna', 'clock', 'diagram', 'astronaut';
+$features-icons: "antenna", "clock", "diagram", "astronaut";
 
 @each $icon in $features-icons {
   .features__item--#{$icon}::before {

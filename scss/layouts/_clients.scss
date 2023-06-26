@@ -1,6 +1,7 @@
 .clients__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__link {
