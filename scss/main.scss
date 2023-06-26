@@ -1,0 +1,26 @@
+@import './vendors/modern-normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './base/_common';
+
+@import './components/icons';
+@import './components/button';
+@import './components/logo';
+@import './components/navigation';
+@import './components/socials';
+@import './components/modal';
+@import './components/filter';
+@import './components/card';
+
+@import './layouts/container';
+@import './layouts/section';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
