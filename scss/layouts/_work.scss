@@ -1,3 +1,11 @@
+.work {
+  display: none;
+
+  @media screen and (min-width: 1199px) {
+    display: block;
+  }
+}
+
 .work__secondary-title {
   margin-bottom: 95px;
 }
@@ -46,6 +54,7 @@
 
 .work-example__item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     box-shadow: 2px 2px 27px 0px rgba(222, 222, 222, 1);
   }

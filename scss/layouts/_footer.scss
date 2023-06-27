@@ -24,8 +24,13 @@
 
 .footer__container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 70px;
+
+  @media screen and (min-width: 1199px) {
+    justify-content: space-between;
+  }
 }
 
 .footer-title {
@@ -48,6 +53,7 @@
 }
 
 .footer-form__wrapper {
+  text-align: center;
   padding-top: 10px;
 }
 
@@ -69,7 +75,9 @@
 
 .footer-form {
   display: flex;
-  column-gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .send-icon {
