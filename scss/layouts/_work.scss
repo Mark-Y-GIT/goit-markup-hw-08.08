@@ -49,7 +49,16 @@
 }
 
 .work-example__item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  flex-grow: 1;
+
+  @include respond(tablet) {
+    flex-grow: 0;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include respond(pc) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 }
 
 .work-example__item {

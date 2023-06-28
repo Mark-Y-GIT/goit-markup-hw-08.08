@@ -1,9 +1,18 @@
 .filter {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+  flex-wrap: wrap;
 
-.filter__item {
-  margin-bottom: 50px;
+  column-gap: 10px;
+  row-gap: 15px;
+  margin-bottom: 40px;
+
+  @include respond(tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include respond(pc) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }

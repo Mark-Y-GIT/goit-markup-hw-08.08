@@ -674,12 +674,23 @@ ul {
 
 .filter {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
-
-.filter__item {
-  margin-bottom: 50px;
+@media screen and (min-width: 767.98px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .card {
@@ -908,7 +919,18 @@ ul {
 }
 
 .work-example__item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-grow: 1;
+}
+@media screen and (min-width: 767.98px) {
+  .work-example__item {
+    flex-grow: 0;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199.98px) {
+  .work-example__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .work-example__item {
