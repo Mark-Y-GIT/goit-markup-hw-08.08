@@ -1,5 +1,5 @@
 .features__list {
-  @media screen and (min-width: 767px) {
+  @include respond(tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
@@ -26,11 +26,11 @@
     }
   }
 
-  @media screen and (min-width: 767px) {
+  @include respond(tablet) {
     flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1199px) {
+  @include respond(pc) {
     flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }

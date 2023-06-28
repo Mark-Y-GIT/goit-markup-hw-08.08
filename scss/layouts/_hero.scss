@@ -18,7 +18,7 @@
   // margin-left: auto;
   // background-repeat: no-repeat;
 
-  @media screen and (min-width: 1199px) {
+  @include respond(pc) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -40,7 +40,7 @@
 
   color: var(--dark-bg-text-color);
 
-  @media screen and (min-width: 1199px) {
+  @include respond(pc) {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;

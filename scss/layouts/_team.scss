@@ -24,11 +24,11 @@
   text-align: center;
   flex-grow: 1;
 
-  @media screen and (min-width: 767px) {
+  @include respond(tablet) {
     max-width: 354px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @include respond(pc) {
     max-width: 270px;
   }
 }
