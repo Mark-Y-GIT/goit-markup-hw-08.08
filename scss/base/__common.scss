@@ -63,7 +63,13 @@ ul {
   }
 }
 
-.modal-open {
+// .modal-open {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
+
+.scroll-wrapper {
+  width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
+  overflow: auto;
 }
